@@ -1,0 +1,35 @@
+{
+  "name": "buildable-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/buildable-ui/src",
+  "prefix": "simba",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/buildable-ui/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/buildable-ui/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/buildable-ui/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/buildable-ui/**/*.ts",
+          "libs/buildable-ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
