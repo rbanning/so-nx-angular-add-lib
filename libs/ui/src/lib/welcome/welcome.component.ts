@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Nullable } from '@simba/shared-types';
 
 @Component({
   selector: 'simba-welcome',
@@ -7,5 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class WelcomeComponent  {
   @Input()
-  name?: string | null;
+  name: Nullable<string>;
+  
 }
