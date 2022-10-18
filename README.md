@@ -7,7 +7,7 @@ a basic (ts) library to a project.
 This NX Angular Workspace consists of 
 
 - an Angular application (`chester`) 
-- an Angular library ('ui')
-- a TS library ('shared-types')
+- an Angular library (`ui`)
+- a TS library (`shared-types`)
 
 ## The Issue

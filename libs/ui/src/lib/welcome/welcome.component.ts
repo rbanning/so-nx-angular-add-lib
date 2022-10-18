@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class WelcomeComponent  {
   @Input()
-  name?: string;
+  name?: string | null;
 }

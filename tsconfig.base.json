@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@simba/shared-types": ["libs/shared-types/src/index.ts"],
       "@simba/ui": ["libs/ui/src/index.ts"]
     }
   },
