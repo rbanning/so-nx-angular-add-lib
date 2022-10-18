@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Nullable } from '@simba/shared-types';
 
 @Component({
   selector: 'simba-message',
@@ -7,5 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class MessageComponent {
   @Input()
-  quote?: string | null;
+  quote: Nullable<string> //quote?: string | null;
 }
