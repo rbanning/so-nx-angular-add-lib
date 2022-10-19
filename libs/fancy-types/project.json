@@ -1,0 +1,26 @@
+{
+  "name": "fancy-types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/fancy-types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/fancy-types",
+        "main": "libs/fancy-types/src/index.ts",
+        "tsConfig": "libs/fancy-types/tsconfig.lib.json",
+        "assets": ["libs/fancy-types/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/fancy-types/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

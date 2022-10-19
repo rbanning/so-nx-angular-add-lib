@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@simba/buildable-ui": ["libs/buildable-ui/src/index.ts"],
+      "@simba/fancy-types": ["libs/fancy-types/src/index.ts"],
       "@simba/shared-types": ["libs/shared-types/src/index.ts"],
       "@simba/ui": ["libs/ui/src/index.ts"]
     }
